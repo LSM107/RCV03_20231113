@@ -7,9 +7,9 @@ window_title = "USB Camera"
 
 def show_camera():
     # ASSIGN CAMERA ADDRESS HERE
-    camera_id = "/dev/video0"
+    camera_id = 0
     # For webcams, we use V4L2
-    video_capture = cv2.VideoCapture(camera_id, cv2.CAP_V4L2)
+    video_capture = cv2.VideoCapture(camera_id)
 
     if video_capture.isOpened():
         try:
